@@ -38,7 +38,7 @@ public class ActionController extends HttpServlet {
 			StudentDao.doInsert(s);
 			response.sendRedirect("success.jsp");	
 		}
-		else if(action.equalsIgnoreCase("edit")) {
+		else if(action.equalsIgnoreCase("Edit")) {
 			int id = Integer.parseInt(request.getParameter("id"));
 			StudentBean s = StudentDao.getStudentById(id);
 			request.setAttribute("s", s);
