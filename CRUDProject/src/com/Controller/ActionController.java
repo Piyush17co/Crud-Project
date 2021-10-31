@@ -44,7 +44,7 @@ public class ActionController extends HttpServlet {
 			request.setAttribute("s", s);
             request.getRequestDispatcher("update.jsp").forward(request, response);
 		}
-		else if(action.equalsIgnoreCase("update")) {
+		else if(action.equalsIgnoreCase("Update")) {
 			System.out.println("Controller Update Called");
 			StudentBean s = new StudentBean();
 			s.setId(Integer.parseInt(request.getParameter("id")));
