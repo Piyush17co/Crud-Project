@@ -11,7 +11,7 @@ import com.Util.StudentUtil;
 
 public class StudentDao {
     public static void doInsert(StudentBean s) {
-    	System.out.println("doinsert done");
+    	System.out.println("Doinsert done");
     	Connection conn =null;
     	try {
 			conn = StudentUtil.createConnection();
